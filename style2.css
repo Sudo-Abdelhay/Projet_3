@@ -79,15 +79,27 @@ background: linear-gradient(#f39bda, #b68aec );
 
 /* FONCTIONNEMENT */
 
+
+.placement_i{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.placement_p{
+    width: calc(45%);
+    display: flex;
+    justify-content: flex-start;
+}
+
 .ab_section{
 display: flex;
 flex-direction: column;
 gap: 20px;
 }
 
+
 .ab_section p{
     font-weight: bold;
-    align-items: center;
 }
 
 .ab_section-1{
@@ -105,45 +117,12 @@ margin-left: 10px;
     color: grey;
 }
 
-.ab_section-2{
-display: flex;
-justify-content: space-around;
-align-items: center;   
-background-color: #F6F6F6; 
-border-radius: 25px;
-height: 80px;
-box-shadow: gainsboro 1px 10px 20px;
-margin-left: 10px;
-}
-
-.ab_section-2 i {
-    color: grey;
-}
-
-.ab_section-3{
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: #F6F6F6;
-border-radius: 25px;
-height: 80px;
-box-shadow: gainsboro 1px 10px 20px;
-margin-left: 10px;
-}
-
-.ab_section-3 i{
-color: grey;
-}
-
-.ab_section :hover{
+.ab_section-1:hover{
     background-color: #F7EDFF;
+    color: #9356DC;
 }
 
-.ab_section-1 i:hover,
-.ab_section-2 i:hover,
-.ab_section-3 i:hover,
-.ab_section :hover{
-    background-color: #F7EDFF;
+.ab_section-1 i:hover{
     color: #9356DC;
 }
 
@@ -151,12 +130,12 @@ color: grey;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 border-radius: 25px;
 background-color:#9356DC;
 color: white;
-margin-left: -40px;
+margin-left: -50px;
 }
 
 /* RESTAURANTS */
@@ -690,6 +669,19 @@ opacity:1;
 
 @media screen and (min-width: 767px) and (max-width: 992px ) {
 
+
+    .ab_puprle_spot{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        background-color:#9356DC;
+        color: white;
+        margin-left: -80px;
+        }
+
 .ab_section-1{
 display: flex;
 justify-content: space-around;
@@ -702,44 +694,14 @@ margin-left: 10px;
 font-size: x-large;
 }
 
-
-.ab_section-2{
-display: flex;
-justify-content: space-around;
-align-items: center;   
-background-color: #F6F6F6; 
-border-radius: 25px;
-height: 120px;
-box-shadow: gainsboro 1px 10px 20px;
-margin-left: 10px;
-font-size: x-large;
-}
-
-
-.ab_section-3{
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: #f6f6f6;
-border-radius: 25px;
-height: 120px;
-box-shadow: gainsboro 1px 10px 20px;
-margin-left: 10px;
-font-size: x-large;
-}
-
-.ab_section :hover{
-    background-color: #F7EDFF;
-}
-
-.ab_section-1 i:hover,
-.ab_section-2 i:hover,
-.ab_section-3 i:hover,
-.ab_section :hover{
+.ab_section-1:hover{
     background-color: #F7EDFF;
     color: #9356DC;
 }
 
+.ab_section-1 i:hover{
+    color: #9356DC;
+}
 
 .container {
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -751,6 +713,19 @@ height: 100px;
 background-color: white;
 }
 
+.new{
+    width: 80px;
+    height: 30px;
+    background-color: #99E2D0;
+    font-weight: bold;
+    color: green;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 10px;
+    margin-left: calc(87%);
+    }
 
 .ab_cartes img{
 width: 100%;
@@ -785,6 +760,24 @@ width: 45%;
     width: calc(22%);
     }
 
+    .ab_puprle_spot{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        background-color:#9356DC;
+        color: white;
+        margin-left: -120px;
+        }
+
+        .placement_p{
+            width: calc(30%);
+            display: flex;
+            justify-content: flex-start;
+        }
+        
 
 .ab_section-1{
 display: flex;
@@ -798,39 +791,21 @@ margin-left: 10px;
 font-size: x-large;
 }
 
-.ab_section-2{
-display: flex;
-justify-content: space-around;
-align-items: center;   
-background-color: #F6F6F6; 
-border-radius: 25px;
-height: 150px;
-box-shadow: gainsboro 1px 10px 20px;
-font-size: x-large;
-margin-left: 10px;
-}
-
-.ab_section-3{
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: #f6f6f6;
-border-radius: 25px;
-height: 150px;
-box-shadow: gainsboro 1px 10px 20px;
-margin-left: 10px;
-font-size: x-large;
-}
-
-.ab_section-1 i:hover,
-.ab_section-2 i:hover,
-.ab_section-3 i:hover,
-.ab_section :hover{
+.ab_section-1:hover{
     background-color: #F7EDFF;
     color: #9356DC;
 }
 
+.ab_section-1 i:hover{
+    color: #9356DC;
+}
 
+.ab_cartes{
+    border: solid 1px #f2f2f2;
+    border-radius: 15px ;
+    box-shadow: gainsboro 1px 10px 20px;
+    width: 100%;
+    }
 
 #ab_cartes_restaurants {
     background-color: #f6f6f6;
@@ -911,8 +886,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-block-start: 10px;
-margin-left: 1000px;
-
+margin-left: 870px;
 }
 
 
